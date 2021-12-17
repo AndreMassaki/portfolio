@@ -5,18 +5,18 @@ const GlobalStyle = createGlobalStyle`
 * {
   box-sizing: border-box;
   ::selection {
-    background: ${({ theme }) => theme.colors.secondary.main.color};
-    color: ${({ theme }) => theme.colors.primary.main.color}
+    background: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.primary}
   }
   ::-webkit-scrollbar {
     width: .5rem;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.colors.secondary.main.color};
+    background-color: ${({ theme }) => theme.colors.secondary};
     border-radius: 8px;
   }
   ::-webkit-scrollbar-track {
-    background-color: ${({ theme }) => theme.colors.primary.main.color};
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 }
 

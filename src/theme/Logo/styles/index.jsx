@@ -4,7 +4,7 @@ import { TextStyleVariantsMap } from '../../../components/foundation/Text';
 
 const Logo = styled.a`
   align-items: center;
-  background: ${({ theme }) => theme.colors.secondary.main.color};
+  background: ${({ theme }) => theme.colors.secondary};
   color: #fff;
   cursor: pointer;
   display: flex;
@@ -14,9 +14,9 @@ const Logo = styled.a`
   ${propToStyle('height')}
   ${TextStyleVariantsMap.navLogo};
   :hover {
-    background: ${({ theme }) => theme.colors.primary.main.color};
-    border: 1px solid ${({ theme }) => theme.colors.secondary.main.color};
-    color: ${({ theme }) => theme.colors.secondary.main.color};
+    background: ${({ theme }) => theme.colors.primary};
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
     text-decoration: underline;
     transition: ease-in-out .5s;
   }

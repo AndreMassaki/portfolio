@@ -19,7 +19,7 @@ BannerWrapper.Image = styled.img`
 
 BannerWrapper.Div = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
-  border: 5px solid ${({ theme }) => theme.colors.secondary.main.color};
+  border: 5px solid ${({ theme }) => theme.colors.secondary};
   color: white;
   left: 50%;
   padding: 20px;

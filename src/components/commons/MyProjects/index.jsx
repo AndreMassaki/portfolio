@@ -1,7 +1,7 @@
 import React from 'react';
+import { css } from 'styled-components';
 import MyProjectsWrapper from './styles';
 import Text from '../../foundation/Text';
-import Grid from '../../foundation/layout/Grid';
 import Box from '../../foundation/layout/Box';
 
 export default function MyProjects() {
@@ -22,119 +22,113 @@ export default function MyProjects() {
       >
         Meus Projetos
       </Text>
-      <Grid.Row
+      <Box
+        display="flex"
         flexDirection={{
           xs: 'column',
           md: 'row',
         }}
-        gap={{
-          xs: '2rem',
-          md: '3rem',
-        }}
-        marginBottom={{
-          xs: '2rem',
-          md: '2rem',
-        }}
-      >
-        <Grid.Col
-          offset={{ xs: 1, md: 1.6 }}
-          value={{ xs: 8, md: 2 }}
-        >
-          <Text
-            tag="a"
-            href="https://instalura-base-andremassaki.vercel.app"
-            color="black"
-            textDecoration="none"
-          >
-            <MyProjectsWrapper.Card>
-              <MyProjectsWrapper.CardImage
-                src="/images/Instalura-Mobile.png"
-                width="100%"
-              />
-              <Text
-                tag="h3"
-                variant="subTitle2"
-                textAlign="center"
-              >
-                Instalura
-              </Text>
-            </MyProjectsWrapper.Card>
-          </Text>
-        </Grid.Col>
-        <Grid.Col
-          offset={{ xs: 1, md: 0.0000000001 }}
-          value={{ xs: 8, md: 2 }}
-        >
-          <Text
-            tag="a"
-            href="https://instalura-base-andremassaki.vercel.app"
-            color="black"
-            textDecoration="none"
-          >
-            <MyProjectsWrapper.Card>
-              <MyProjectsWrapper.CardImage
-                src="/images/Instalura-Mobile.png"
-                width="100%"
-              />
-              <Text
-                tag="h3"
-                variant="subTitle2"
-                textAlign="center"
-              >
-                Instalura
-              </Text>
-            </MyProjectsWrapper.Card>
-          </Text>
-        </Grid.Col>
-        <Grid.Col
-          offset={{ xs: 1, md: 0.0000000001 }}
-          value={{ xs: 8, md: 2 }}
-        >
-          <Text
-            tag="a"
-            href="https://instalura-base-andremassaki.vercel.app"
-            color="black"
-            textDecoration="none"
-          >
-            <MyProjectsWrapper.Card>
-              <MyProjectsWrapper.CardImage
-                src="/images/Instalura-Mobile.png"
-                width="100%"
-              />
-              <Text
-                tag="h3"
-                variant="subTitle2"
-                textAlign="center"
-              >
-                Instalura
-              </Text>
-            </MyProjectsWrapper.Card>
-          </Text>
-        </Grid.Col>
-      </Grid.Row>
-      <Text
-        tag="a"
-        href="https://instalura-base-andremassaki.vercel.app"
-        color="black"
-        order={{
-          xs: '-1',
-          md: 'initial',
-        }}
-        textDecoration="none"
-        margin={{
-          xs: '0 auto 2rem',
-          md: '0 16% 3rem',
-        }}
-        width={{
-          xs: '80%',
-          md: 'calc(60% + 6rem)',
+        justifyContent="center"
+        style={{
+          flexWrap: 'wrap',
         }}
       >
         <MyProjectsWrapper.Card
+          href="https://instalura-base-andremassaki.vercel.app"
+          width={{
+            xs: '80vw',
+            md: '25vw',
+          }}
+          margin={{
+            xs: '1rem auto',
+            md: '1rem',
+          }}
+        >
+          <MyProjectsWrapper.CardImage
+            src="/images/Instalura-Mobile.png"
+            width="100%"
+            borderBottom={{
+              xs: css`3px solid ${({ theme }) => theme.colors.secondary}`,
+            }}
+          />
+          <Text
+            tag="h3"
+            variant="subTitle2"
+            textAlign="center"
+          >
+            Instalura
+          </Text>
+        </MyProjectsWrapper.Card>
+        <MyProjectsWrapper.Card
+          href="https://instalura-base-andremassaki.vercel.app"
+          width={{
+            xs: '80vw',
+            md: '25vw',
+          }}
+          margin={{
+            xs: '1rem auto',
+            md: '1rem',
+          }}
+        >
+          <MyProjectsWrapper.CardImage
+            src="/images/Instalura-Mobile.png"
+            width="100%"
+            borderBottom={{
+              xs: css`3px solid ${({ theme }) => theme.colors.secondary}`,
+            }}
+          />
+          <Text
+            tag="h3"
+            variant="subTitle2"
+            textAlign="center"
+          >
+            Instalura
+          </Text>
+        </MyProjectsWrapper.Card>
+        <MyProjectsWrapper.Card
+          href="https://instalura-base-andremassaki.vercel.app"
+          width={{
+            xs: '80vw',
+            md: '25vw',
+          }}
+          margin={{
+            xs: '1rem auto',
+            md: '1rem',
+          }}
+        >
+          <MyProjectsWrapper.CardImage
+            src="/images/Instalura-Mobile.png"
+            width="100%"
+            borderBottom={{
+              xs: css`3px solid ${({ theme }) => theme.colors.secondary}`,
+            }}
+          />
+          <Text
+            tag="h3"
+            variant="subTitle2"
+            textAlign="center"
+          >
+            Instalura
+          </Text>
+        </MyProjectsWrapper.Card>
+        <MyProjectsWrapper.Card
+          href="https://instalura-base-andremassaki.vercel.app"
           display="flex"
           flexDirection={{
             xs: 'column',
             md: 'row',
+          }}
+          order={{
+            xs: '-1',
+            md: 'initial',
+          }}
+          margin={{
+            xs: '1rem auto',
+            md: '1rem',
+          }}
+          width={{
+            xs: '80vw',
+            md: 'calc(75vw + 4rem)',
           }}
         >
           <Text
@@ -151,6 +145,13 @@ export default function MyProjects() {
           <MyProjectsWrapper.CardImage
             src="./images/Instalura-Desktop.png"
             width={{ md: '66.666%' }}
+            borderRight={{
+              md: css`3px solid ${({ theme }) => theme.colors.secondary}`,
+            }}
+            borderBottom={{
+              xs: css`3px solid ${({ theme }) => theme.colors.secondary}`,
+              md: 'none',
+            }}
           />
           <Box
             display="flex"
@@ -161,7 +162,7 @@ export default function MyProjects() {
               variant="subTitle2"
               margin={{
                 xs: '2rem auto',
-                md: '2.5rem 0 1.5rem 1rem',
+                md: '2.5rem 0 2rem 1rem',
               }}
               textAlign={{
                 xs: 'center',
@@ -190,7 +191,7 @@ export default function MyProjects() {
             </Text>
           </Box>
         </MyProjectsWrapper.Card>
-      </Text>
+      </Box>
     </MyProjectsWrapper>
   );
 }

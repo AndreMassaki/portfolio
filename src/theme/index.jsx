@@ -1,16 +1,8 @@
 import typographyVariants from './typographyVariants';
 
 const colors = {
-  primary: {
-    main: {
-      color: '#fff8e6',
-    },
-  },
-  secondary: {
-    main: {
-      color: '#e9c46a',
-    },
-  },
+  primary: '#fff8e6',
+  secondary: '#e9c46a',
 };
 
 const breakpoints = {

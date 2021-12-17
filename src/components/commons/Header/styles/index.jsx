@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
-  background: ${({ theme }) => theme.colors.primary.main.color};
+  background: ${({ theme }) => theme.colors.primary};
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -25,7 +25,7 @@ HeaderWrapper.Navbar = styled.nav`
     cursor: pointer;
     text-decoration: none;
     &:hover {
-      color: ${({ theme }) => theme.colors.secondary.main.color};
+      color: ${({ theme }) => theme.colors.secondary};
     }
   }
 `;
