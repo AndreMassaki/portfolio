@@ -69,6 +69,46 @@ const typographyVariants = {
     fontWeight: '400',
     lineHeight: 1.2,
   },
+  contactTitleXS: {
+    fontSize: '2rem',
+    fontWeight: '400',
+    lineHeight: 1.2,
+  },
+  contactTitleMD: {
+    fontSize: '2.25rem',
+    fontWeight: '400',
+    lineHeight: 1.2,
+  },
+  formTitleXS: {
+    fontSize: '1.5rem',
+    fontWeight: '300',
+    lineHeight: 1.2,
+  },
+  formTitleMD: {
+    fontSize: '2.25rem',
+    fontWeight: '300',
+    lineHeight: 1.2,
+  },
+  formTextXS: {
+    fontSize: '1.125rem',
+    fontWeight: '400',
+    lineHeight: 1.2,
+  },
+  formTextMD: {
+    fontSize: '1.75rem',
+    fontWeight: '400',
+    lineHeight: 1.2,
+  },
+  formSubmitXS: {
+    fontSize: '1.75rem',
+    fontWeight: '400',
+    lineHeight: 1.2,
+  },
+  formSubmitMD: {
+    fontSize: '1.75rem',
+    fontWeight: '400',
+    lineHeight: 1.2,
+  },
 };
 
 export default typographyVariants;

@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   ::-webkit-scrollbar-thumb {
     background-color: ${({ theme }) => theme.colors.secondary};
-    border-radius: 8px;
+    border-radius: .5rem;
   }
   ::-webkit-scrollbar-track {
     background-color: ${({ theme }) => theme.colors.primary};

@@ -94,6 +94,62 @@ export const TextStyleVariantsMap = {
     `,
   })}
   `,
+  contactTitle: css`
+    ${breakpointsMedia({
+    xs: css`
+      font-size: ${({ theme }) => theme.typographyVariants.contactTitleXS.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.contactTitleXS.fontWeight};
+      line-height: ${({ theme }) => theme.typographyVariants.contactTitleXS.lineHeight};
+    `,
+    md: css`
+      font-size: ${({ theme }) => theme.typographyVariants.contactTitleMD.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.contactTitleMD.fontWeight};
+      line-height: ${({ theme }) => theme.typographyVariants.contactTitleMD.lineHeight};
+    `,
+  })}
+  `,
+  formTitle: css`
+    ${breakpointsMedia({
+    xs: css`
+      font-size: ${({ theme }) => theme.typographyVariants.formTitleXS.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.formTitleXS.fontWeight};
+      line-height: ${({ theme }) => theme.typographyVariants.formTitleXS.lineHeight};
+    `,
+    md: css`
+      font-size: ${({ theme }) => theme.typographyVariants.formTitleMD.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.formTitleMD.fontWeight};
+      line-height: ${({ theme }) => theme.typographyVariants.formTitleMD.lineHeight};
+    `,
+  })}
+  `,
+  formText: css`
+    ${breakpointsMedia({
+    xs: css`
+      font-size: ${({ theme }) => theme.typographyVariants.formTextXS.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.formTextXS.fontWeight};
+      line-height: ${({ theme }) => theme.typographyVariants.formTextXS.lineHeight};
+    `,
+    md: css`
+      font-size: ${({ theme }) => theme.typographyVariants.formTextMD.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.formTextMD.fontWeight};
+      line-height: ${({ theme }) => theme.typographyVariants.formTextMD.lineHeight};
+    `,
+  })}
+  `,
+  formSubmit: css`
+    ${breakpointsMedia({
+    xs: css`
+      font-size: ${({ theme }) => theme.typographyVariants.formSubmitXS.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.formSubmitXS.fontWeight};
+      line-height: ${({ theme }) => theme.typographyVariants.formSubmitXS.lineHeight};
+    `,
+    md: css`
+      font-size: ${({ theme }) => theme.typographyVariants.formSubmitMD.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.formSubmitMD.fontWeight};
+      line-height: ${({ theme }) => theme.typographyVariants.formSubmitMD.lineHeight};
+    `,
+  })}
+  `,
   paragraph: css`
     font-size: ${({ theme }) => theme.typographyVariants.paragraph.fontSize};
     font-weight: ${({ theme }) => theme.typographyVariants.paragraph.fontWeight};
@@ -109,7 +165,6 @@ const TextBase = styled.span`
   ${propToStyle('display')}
   ${propToStyle('height')}
   ${propToStyle('margin')}
-  ${propToStyle('marginLeft')}
   ${propToStyle('order')}
   ${propToStyle('padding')}
   ${propToStyle('position')}
